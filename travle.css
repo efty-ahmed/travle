@@ -395,14 +395,23 @@ footer {
 /* risponsive for mobile devise */
 
 @media screen and (max-width: 576px) {
-  .nav_bar,
-  .filter_section,
+  nav > .logo_title {
+    padding-left: 0;
+  }
   .popular_container {
+    display: block;
+  }
+  .box_container_1,
+  .box_container_2,
+  .box_container_3 {
     flex-direction: column;
   }
-  .logo {
-    display: none;
-  }
+}
+.hotel,
+.map,
+.prize {
+  flex-direction: column;
+  grid-template-columns: repeat(1, 1fr);
 }
 /* risponsiv for tab */
 @media screen and (min-width: 576px) and (max-width: 990px) {
